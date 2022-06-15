@@ -1,0 +1,54 @@
+.conteudo {
+    display: grid;
+    grid-template-areas:
+        "A A A"
+        "B B E"
+        "C D E";
+    text-align: center;
+    gap: 10px;   
+}
+
+.A {
+    grid-area: A;
+
+}
+
+.B {
+    grid-area: B
+}
+
+.C {
+    grid-area: C
+}
+
+.D {
+    grid-area: D;
+}
+
+.E {
+    grid-area: E
+}
+
+.A,
+.D,
+.C,
+.B,
+.E {
+    padding: 30px;
+    border: 5px solid;
+    font-size: 20pt;
+    background-color: rgba(0, 191, 255, 0.452);
+}
+
+@media screen and (max-width:532px) {
+
+    .conteudo {
+        grid-template-areas:
+            "A A"
+            "B B"
+            "B B"
+            "C D"
+            "E E";
+    }
+
+}

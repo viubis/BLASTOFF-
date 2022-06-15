@@ -1,0 +1,42 @@
+.conteudo{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "menu main right"
+    "menu footer footer";
+    text-align: center;
+    
+    background-color: rgba(0, 191, 255, 0.452);
+}
+
+
+
+.header{
+    grid-area: header;
+    
+}
+
+.menu{
+    grid-area:menu
+}
+
+.main{
+    grid-area:main
+}
+.right{
+    grid-area:right
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.header,
+.footer,
+.main,
+.menu,
+.right{
+    padding: 30px;
+    border: 5px solid ;
+    font-size: 20pt;
+}
